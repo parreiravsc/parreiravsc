@@ -1,0 +1,41 @@
+<html>
+<link rel="stylesheet" href="tabelas.css">
+<script src="tabelas.js"></script>
+
+<head>
+    <title>
+        Imersão Dev - Aula 06
+    </title>
+</head>
+
+<body>
+    <h1>Tabela de classificação</h1>
+    <h2>Adicione um jogador</h2>
+
+    <div class="insert">
+        <input type="text" id="novo_jogador" name="jogador" placeholder="Insira o nome de um novo jogador">
+        <button onClick="add_jogador()">Adicionar Jogador</button>
+    </div>
+
+
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+                <th colspan="3">Ações</th>
+            </tr>
+        </thead>
+        <!--     tabela feita no js -->
+        <tbody id="tabelaJogadores">
+
+        </tbody>
+    </table>
+</body>
+
+<button class="refresh" onClick="refresh()">Apagar</button>
+
+</html>
