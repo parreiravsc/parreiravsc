@@ -85,6 +85,6 @@ function add_jogador() {
 
 //apagando a tabela
 function refresh() {
-    lista_jogadores = {}
+    lista_jogadores = []
     exibir_tela(lista_jogadores)
 }
