@@ -13,7 +13,7 @@
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
 
         <h1 class="page-title">Super Trunfo</h1>
-        <button onClick="sortear_carta()" id="btnSortear">Sortear carta</button>
+        <button onclick="sortear_carta()" id="btnSortear">Sortear carta</button>
 
         <form id="form">
             <h2>Escolha o seu atributo</h2>
@@ -24,21 +24,23 @@
                     <div id="carta-jogador">
                         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
 
-                        <h3></h3>
-
                     </div>
                 </div>
 
                 <div>
-                    <div id="carta-maquina" class="carta"><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;"></div>
+                    <div id="carta-maquina" class="carta">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+                    </div>
                 </div>
 
             </div>
-            <button class="button-jogar" type="button" id="btnJogar" onClick="jogar()" disabled="false">Jogar</button>
-
-            <div id="resultado"></div>
+            <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()">Jogar</button>
         </form>
+
     </div>
+
+    <div id="resultado"> Abacate</div>
+
 </body>
 
 </html>
