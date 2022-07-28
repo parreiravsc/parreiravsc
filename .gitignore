@@ -6,7 +6,8 @@ bin-release/
 
 # Other files and folders
 .settings/
-.vscode/
+.PhD_project/
+#.vscode/
 # Executables
 *.swf
 *.air
