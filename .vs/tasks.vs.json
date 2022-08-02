@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-HTMLPage1",
+      "appliesTo": "XPE_ed/html_minicamp/HTMLPage1.html",
+      "type": "launch"
+    }
+  ]
+}

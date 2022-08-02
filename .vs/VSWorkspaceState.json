@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ADS_course",
-    "\\Alura_project",
-    "\\data-science",
-    "\\PhD_project",
-    "\\PhD_project\\PhD_project"
+    "\\XPE_ed",
+    "\\XPE_ed\\html_minicamp",
+    "\\XPE_ed\\html_minicamp\\conceitos_html",
+    "\\XPE_ed\\html_minicamp\\projeto_base"
   ],
-  "SelectedNode": "\\ADS_course\\Jquery_onclick.html",
+  "SelectedNode": "\\XPE_ed\\html_minicamp\\projeto_base\\script.js",
   "PreviewInSolutionExplorer": false
 }
