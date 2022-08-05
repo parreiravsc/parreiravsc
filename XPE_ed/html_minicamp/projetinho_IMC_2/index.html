@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>IMC</title>
+    <link rel="stylesheet" href="./StyleSheet.css"/>
+    
+</head>
+
+<body>
+    <h1>Calculo do IMC</h1>
+
+    <p>
+        <label for="input-weight">Informe seu peso (kg):</label><br />
+        <input id="input-weight" type="number" step="0.01">
+    </p>
+
+    <p>
+        <label for="input-height">Informe sua altura (m):</label><br />
+        <input id="input-height" type="number" step="0.01">
+    </p>
+
+    <p>
+        <button id="calculate_imc">Calcular IMC</button>
+    </p>
+
+
+    <p id="p_result">
+        O IMC destes dados é <strong id="result" "> 0.0 </strong>
+    </p>
+    <p id="p_resposta">
+        Este valor considera que você está na faixa de  <strong id="resposta"> resposta </strong>
+    </p>
+
+    <!--só executa o script quando o html terminar de ser carregado*-->
+    <script defer src=".\script.js">
+    </script>
+</body>
+</html>
