@@ -31,13 +31,13 @@ function handlecalculateIMC() {
 function resposta(a) {
     var resposta_imc = document.querySelector("#resposta");
     var value = a;
-    if ((a >= 16) && (a <= 16.9)) {
+    if ((a >= 16) && (a <= 16,9)) {
         resposta_txt = "Muito abaixo do peso.";
-    } else if ((a > 16.9) && (a <= 18.4)) {
+    } else if ((a > 16,9) && (a <= 18,4)) {
         resposta_txt = "Abaixo do peso.";
-    } else if ((a > 18.4) && (a <= 24.9)) {
+    } else if ((a > 18,4) && (a <= 24,9)) {
         resposta_txt = "Peso normal.";
-    } else if ((a > 24.9) && (a <= 29.9)) {
+    } else if ((a > 24,9) && (a <= 29,9)) {
         resposta_txt = "Acima do peso.";
     } else if ((a > 29.9) && (a <= 34.9)) {
         resposta_txt = "Obesidade grau I.";
@@ -45,6 +45,8 @@ function resposta(a) {
         resposta_txt = "Obesidade grau II.";
     } else if (a > 40) {
         resposta_txt = "Obesidade grau III.";
+    } else {
+        resposta_txt = "Invalido.";
     }
 
     resposta_imc.textContent = resposta_txt;
