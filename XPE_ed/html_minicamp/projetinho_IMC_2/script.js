@@ -17,38 +17,48 @@ function handlecalculateIMC() {
     var weight = Number(ip_weight.value);
     var height = Number(ip_height.value);
 
-    var result = weight / (height + height);
+    var result = weight / (height * height);
 
     var value_imc = document.querySelector("#result");
 
+    value_imc_calc = result.toFixed(2)
     value_imc.textContent = result.toFixed(2).replace(".", ",");
     
-    console.log(result);
+   // console.log(value_imc_calc);
 
-    resposta(value_imc);
+    resposta(value_imc_calc);
     
 }
 function resposta(a) {
     var resposta_imc = document.querySelector("#resposta");
-    var value = a;
-    if ((a >= 16) && (a <= 16,9)) {
+
+   // console.log(a)
+    var value = parseFloat(a);
+   // console.log(typeof value)
+
+    var resposta_txt = "";
+    
+
+    //console.log(value)
+
+    if ((value >= 16) && (value <= 16.9)) {
         resposta_txt = "Muito abaixo do peso.";
-    } else if ((a > 16,9) && (a <= 18,4)) {
+    } else if ((value > 16.9) && (value <= 18.4)) {
         resposta_txt = "Abaixo do peso.";
-    } else if ((a > 18,4) && (a <= 24,9)) {
+    } else if ((value > 18.4) && (value <= 24.9)) {
         resposta_txt = "Peso normal.";
-    } else if ((a > 24,9) && (a <= 29,9)) {
+    } else if ((value > 24.9) && (value <= 29.9)) {
         resposta_txt = "Acima do peso.";
-    } else if ((a > 29.9) && (a <= 34.9)) {
+    } else if ((value > 29.9) && (value <= 34.9)) {
         resposta_txt = "Obesidade grau I.";
-    } else if ((a > 34.9) && (a <= 40)) {
+    } else if ((value > 34.9) && (value <= 40)) {
         resposta_txt = "Obesidade grau II.";
-    } else if (a > 40) {
+    } else if (value > 40) {
         resposta_txt = "Obesidade grau III.";
     } else {
         resposta_txt = "Invalido.";
     }
-
+    //console.log(resposta_txt)
     resposta_imc.textContent = resposta_txt;
 
 
