@@ -8,8 +8,9 @@ ajax.send(); //usado para levar informações, não vou usar
 //console.log("teste")
 
 var btn = document.getElementById('btn');
-btn.addEventListener("click".function() {
-
+btn.addEventListener("click", function() {
+    console.log(ajax.response);
+    //console.log("teste");
     //verificar se a requisição está funcionando
     ajax.addEventListener("readystatechange", function() {
         //console.log(ajax.readyState);

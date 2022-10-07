@@ -1,6 +1,6 @@
 <?php
 
-$usuarios  = [
+$usuarios  = Array [
 
     "Guilherme",
     "Maria",
