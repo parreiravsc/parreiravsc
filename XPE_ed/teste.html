@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title> Exercicio do teste</title>
+    <h1>Ecnontrar a soma dos numeros multiplos de 3 e 5 menores que X </h1>
+    <p id="resposta"></p>
+</head>
+<body>
+    <script>
+        function somaMultiplos3ou5 (numero){
+            var stop = numero;
+            var start = 0;
+            var soma = 0;
+            for (i=start; i< numero; i++){
+                if (i%3 === 0 || i%5 === 0){
+                          soma = soma + i;
+                }
+            }
+            
+            return soma;
+        }
+        var html = document.getElementById("resposta");
+        console.log(html);
+        html.innerHTML = somaMultiplos3ou5(15);
+
+    </script>
+
+</body>
